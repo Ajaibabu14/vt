@@ -62,7 +62,7 @@ public class baseClass {
 	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	driver.get(utility.readDataFromFile("url"));
 	Vlogin=new VtigerLoginpage(driver);
-	
+	System.out.println("Ajaibabu");
 	 Vlogin.getUseNameTextField().sendKeys(utility.readDataFromFile("username"));
 	 assertEquals(utility.readDataFromFile("username"),Vlogin.getUseNameTextField().getAttribute("value"));
 	 Vlogin.getPasswordTextField().sendKeys(utility.readDataFromFile("password"));
